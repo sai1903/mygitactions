@@ -1,4 +1,4 @@
-name : surya-cicd
+name : Super-Linter
 
 on: push  
 
@@ -10,8 +10,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run surya-cicd
-        uses: github/surya-cicd@v3
+      - name: Run Super-Linter
+        uses: github/Super-Linter@v3
         env: 
            DEFAULT_BRANCH: main 
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
