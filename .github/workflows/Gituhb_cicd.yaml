@@ -1,4 +1,4 @@
-name : surya-cicd
+name : Gituhb_cicd
 
 on: push  
 
@@ -10,8 +10,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run surya-cicd
-        uses: github/surya-cicd@v3
+      - name: Run Gituhb_cicd
+        uses: github/Gituhb_cicd@v3
         env: 
            DEFAULT_BRANCH: main 
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
